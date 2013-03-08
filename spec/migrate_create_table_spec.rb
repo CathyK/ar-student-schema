@@ -10,6 +10,7 @@ describe "create table with correct schema" do
   it "should have a Students table" do
     ActiveRecord::Base.connection.table_exists?(:students).should be_true
   end
+  
 
   it "should have the right columns and types" do
     expected = {
